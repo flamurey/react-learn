@@ -16,7 +16,7 @@ class OrderPage extends React.Component<IProps, IState> {
     }
     render() {
         return (
-            <Header/>
+            <div/>
         );
     }
 }

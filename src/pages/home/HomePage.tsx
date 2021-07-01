@@ -1,5 +1,7 @@
 import React from 'react';
 import Header from "../../container/header/Header";
+import {withAppState} from "../../hocs/AppStateHoc";
+import {AppState} from "../../stores/AppState";
 
 
 interface IProps {
@@ -21,4 +23,6 @@ class HomePage extends React.Component<IProps, IState> {
     }
 }
 
-export default HomePage;
+const homePageWithAppState = withAppState(HomePage);
+
+export default homePageWithAppState;
